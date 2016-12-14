@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 /**
@@ -12,14 +13,14 @@ import android.widget.TextView;
  */
 public class WelcomeActivity extends AppCompatActivity {
     TextView welcomeText;
-    Button welcomeButton;
+    ImageButton welcomeButton;
 
     @Override
     protected void onCreate(Bundle saveInstanceState) {
         super.onCreate(saveInstanceState);
         setContentView(R.layout.activity_welcome);
 
-        welcomeButton = (Button) findViewById(R.id.start_button);
+        welcomeButton = (ImageButton) findViewById(R.id.start_button);
 
         welcomeButton.setOnClickListener(new View.OnClickListener() {
             @Override
