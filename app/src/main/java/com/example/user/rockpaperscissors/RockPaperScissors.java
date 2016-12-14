@@ -21,8 +21,8 @@ public class RockPaperScissors {
         this.playerThrow = possibleThrows.get(playerWeaponIndex);
     }
 
-    public String getPlayerThrow(){
-        return playerThrow.getName();
+    public Weapon getPlayerThrow(){
+        return playerThrow;
     }
 
     public Weapon getCpuThrow(){

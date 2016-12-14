@@ -8,21 +8,29 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".RockPaperScissorsActivity"
-            android:label="Rock Paper Scissors">
-    <intent-filter>
-
-    <category
-        android:name="android.intent.category.LAUNCHER">
-    </category>
-
-    <action
-        android:name="android.intent.action.MAIN">
-    </action>
-    </intent-filter>
+        <activity
+            android:name=".RockPaperScissorsActivity"
+            android:label="Rock Paper Scissors"
+            android:parentActivityName=".RockPaperScissorsActivity">
 
         </activity>
+        <activity android:name=".ResultActivity"
+            android:parentActivityName=".RockPaperScissorsActivity"
+            android:label="@string/result_activity_title">
+        </activity>
 
+        <activity android:name=".WelcomeActivity"
+            android:label="Rock Paper Scissors">
+            <intent-filter>
+                <category
+                    android:name="android.intent.category.LAUNCHER">
+                </category>
+
+                <action
+                    android:name="android.intent.action.MAIN">
+                </action>
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

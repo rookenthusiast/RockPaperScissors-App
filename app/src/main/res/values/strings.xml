@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">RockPaperScissors</string>
+    <string name="rock_button_text">Rock</string>
+    <string name="paper_button_text">Paper</string>
+    <string name="scissors_button_text">Scissors</string>
+    <string name="result_activity_title">And the result is...</string>
+    <string name="start_button_text">Start Playing!</string>
+    <string name="welcome_text">Welcome to Rock,Paper,Scissors. \n Click button to start playing!</string>
 </resources>
